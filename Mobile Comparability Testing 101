@@ -1,0 +1,191 @@
+Mobile Compatibility Testing 101
+
+The purpose of this document is to define some mobile testing terms and methods for performing compatibility testing to ensure that applications function properly across multiple mobile devices. 
+
+First let’s start with a few definitions:
+
+Mobile Devices:
+
+“A mobile device (also known as a handheld device, handheld computer or simply handheld) is a small, hand-held computing device, typically having a display screen with touch input and/or a miniature keyboard and weighing less than 2 pounds (0.91 kg). Apple, HTC, LG, Research in Motion (RIM) and Motorola are just a few examples of the many manufacturers that produce these types of devices.” (http://en.wikipedia.org/wiki/Mobile_device)
+
+Compatibility Testing: 
+“Compatibility testing, part of software non-functional tests, is testing conducted on the application to evaluate the application's compatibility with the computing environment. Computing environment may contain some or all of the below mentioned elements:
+•  Computing capacity of Hardware Platform (IBM 360, HP 9000, etc.)..
+•	Bandwidth handling capacity of networking hardware
+•	Compatibility of peripherals (Printer, DVD drive, etc.)
+•	Operating systems (Linux, Windows, etc.)
+•	Database (Oracle, SQL Server, MySQL, etc.)
+•	Other System Software (Web server, networking/ messaging tool, etc.)
+•	Browser compatibility (Chrome, Firefox, Netscape, Internet Explorer, Safari, etc.)” (http://en.wikipedia.org/wiki/Compatibility_testing)
+Exploratory Testing:
+
+Exploratory testing can also be called adhoc testing, but in reality it is not quite the same.
+We can said that ad hoc testing is an unpremeditated, unstructured, may be even an impetuous trip through the system with the purpose of detectioning software bugs.
+In turn, exploratory testing is synchronous learning, test design, and test performing. Exploratory testing is testing without beforehand prepared scenarios.
+Therefore exploratory testing is often criticized - as software testers should give up planning and preparation.
+To put it differently, exploratory testing is any software testing done to the extent that software tester proactively controls the design of the tests and uses received info to design better tests.
+Exploratory testers are not only keying in random data, but rather testing sections that their experience tells them are significant and then going where those tests take them.
+
+http://qatestlab.com/knowledge-center/QA-Testing-Materials/definition-and-meaning-of-exploratory-testing/
+
+The “freedom” Scale
+
+Looking at the “freedom” Scale below our plan is to cover each end of the spectrum when testing our mobile application. The tester is asked to perform exploratory testing as well as execute the scripted tests that the Agency has provided.  
+
+ 
+
+Source: http://agile2010.agilealliance.org/files/Telling%20Your%20Exploratory%20Story%20Agile2010.pdf
+
+Mobile Applications Architectures:
+
+•	Native apps
+•	Hybrid apps
+•	Dedicated mobile web apps
+•	Device specific web apps
+•	Responsive websites
+
+Native apps are developed for the individual mobile platform in programming languages they support e.g. Java for Android, ObjectiveC for iOS. New features arrive in new models, and this may break compatibility and increase the maintenance. However, native apps have great performance, and they have access to device functions such as camera, navigation etc. Development cost is usually high; especially when there is a requirement for supporting multiple devices.
+
+Hybrid apps could be said to take the best from both worlds. They rely in development frameworks where the native implementation across multiple device architectures becomes less a headache. Hybrid apps main content is typically delivered using standard web standards (HTML, CSS, JavaScript) to keep the cost down, but they can still access the device functions e.g. camera.
+
+Dedicated mobile web apps are simply websites optimized specifically to be rendered on mobile devices. This is useful for giving users access to web based information and transactions via mobile devices. However, maintenance of both a traditional and a mobile website may be the consequence of this model. Keep in mind that web apps and websites will not have access to device features.
+
+Device specific web apps, it is possible to create web apps that are optimized for specific devices; such as iPhone and Android.
+
+Responsive websites are websites that rely on recent development in CSS3 e.g. media queries to adapt the page layouts to the actual screen sizes. This model allows organizations to maintain one website and still provide pages that look great for users on computers, tablets and smartphones.
+
+What does the mobile device market look like?
+
+There are many mobile operating systems available the following shows some examples and trends.
+
+ 
+
+This chart helps decide what Mobile operating systems to develop to and test with. 
+
+This chart shows us the following:
+
+
+OS	April 2013
+iOS	53.51
+Android	40.08
+BlackBerry OS	1.43
+Series 40	1.03
+Windows Phone	1.27
+Unknown	0.72
+Samsung	0.59
+SymbianOS	0.43
+Other	0.94
+
+Although there are many versions of each operating systems, 93.89% of the Mobile operating systems in the United States can be covered by testing only iOS and Android.  
+
+Reminder: When using this type of data your specific “users” must be kept in mind. For example this is information representative of the United States but possibly your customer base is worldwide or regional and have different characteristics. Using tools such as Google Analytics can help determine your specific customer base characteristics.   
+
+ 
+
+This chart helps decide what Make Mobile device to develop to and test with. 
+
+This chart shows us the following:
+
+Make	April 2013
+Apple	53.51
+Samsung	17.78
+HTC	6.15
+Motorola	5.54
+Unknown	3.95
+LG	4.08
+Nokia	2.07
+RIM	1.44
+Huawei	1.34
+ZTE	0.99
+Other	3.13
+
+Although there are many models of each operating systems, 71.29% of the Mobile Devices in the United States can be covered by testing only Apple and Samsung.  
+
+Reminder: When using this type of data your specific “users” must be kept in mind. For example this is information representative of the United States but possibly your customer base is worldwide or regional and have different characteristics. Using tools such as Google Analytics can help determine your specific customer base characteristics.   
+
+Source: http://gs.statcounter.com/
+
+What devices should an application be tested with to prove it works?
+
+As mentioned above it would be nice to test on every possible mobile device, make, model and version, but this is not possible, there is not enough time or resources. 
+
+The goal should be to test on what your users are using. Some organizations find this out by using tools such as Google Analytics to see exactly what type of mobile devices are hitting their site.
+
+If it is not possible to get reports on the types of devices are hitting your site you need to do research an take a best guess using industry trends as shown above.
+
+
+
+What types of things should Testers look for during exploratory and scripted testing?
+
+The following is a list of some of the things that testers should look for during testing:
+
+1.	Links
+a.	Test all links to see that they navigate to the correct page
+2.	Graphical User Interface (GUI) check:
+a.	Font size and color
+b.	Cursor or mouse focus
+c.	Location of buttons, images, symbols and logos.
+d.	Consistent design.
+e.	Buttons should have the right size and be suitable to big fingers
+f.	All text is readable
+g.	Test all header and footer links which are constant for all pages.
+h.	Check to see that pages are uniform and consistent
+i.	Be sure that no text or objects are cut off
+3.	Field Validation
+a.	Is valid data accepted?
+b.	Is invalid data rejected and giving a good error message?
+4.	Page Content
+a.	Verify whether information on all pages is correct and easy to understand.
+b.	Test for spelling and grammatical errors.
+c.	Check for proper help if available
+5.	Touch
+a.	Tapping should zoom-in and zoom-out
+6.	Positioning
+a.	The Application should function properly in landscape and portrait mode
+7.	Scrolling
+a.	Can you scroll back and forth on the page? 
+
+Saving Screen Shots
+
+Many times during the testing process testers find an issue or potential issue. The best way to show someone exactly what you saw is to capture a screen shot of the issue.
+
+There are many ways to save mobile screen shots; some are more difficult/technical than others depending on the device. 
+
+The following are instructions for capturing screen shots on a variety of devices:
+
+•	iPhone
+http://www.imore.com/how-to-take-a-screenshot-with-the-iphone
+http://ipod.about.com/od/iphonewidgets/ht/iph-screenshot.htm
+
+•	Android 4
+http://lifehacker.com/5994516/how-to-take-a-screenshot-on-android
+
+•	Android Before version 4
+http://smallbusiness.chron.com/screenshot-google-android-gingerbread-36229.html
+
+•	General Android Screen Shots  
+http://www.makeuseof.com/tag/6-ways-to-take-screenshots-on-android/
+
+•	Microsoft
+http://www.windowsphone.com/en-us/how-to/wp8/photos/take-a-screenshot
+
+•	Blackberry
+http://howto.cnet.com/8301-11310_39-20057498-285/how-to-take-a-screenshot-on-a-blackberry-smartphone/
+
+When all else fails remember that you can always take a screen shot or movie of your device with another device and submit that.
+
+Capturing Mobile Device Logs
+
+Sometimes mobile applications “crash” or stop working. The only way to really figure out what happened and to describe the issue to the Developer is by saving the system logs. 
+The following are some ways to save the logs on mobile phones.    
+
+iOS
+http://support.panopto.com/documentation/mobile/how-collect-ios-logs
+
+Android has a few solutions including:
+Logcat
+https://play.google.com/store/apps/details?id=yuku.logviewer&hl=en
+
+Log viewer lite
+https://play.google.com/store/apps/details?id=ukzzang.android.app.logviewer&hl=en
+
