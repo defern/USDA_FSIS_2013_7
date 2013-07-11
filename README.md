@@ -1,9 +1,7 @@
 USDA_FSIS_2013_7
 ================
 
-July 2013 Test Cycle for the USDA Food Safety and Inspection Service Web Site
-
-Welcome to the Test Cycle for:
+Welcome to the Test Cycle! 
 
 Agency: USDA Application Name: Food Safety and Imspection Service Web Site
 
