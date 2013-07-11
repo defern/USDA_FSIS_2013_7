@@ -1,0 +1,113 @@
+Directions for Completing the Test Case Template
+
+This document is designed to assist the Agency in completing the Test Case Template for their project. 
+
+The Test Case Template is the main document that Testers use to execute tests and review the application.
+
+While some test case scan be combined, it may be necessary to separate test cases. To do this use a newe sheet in the excel sheet for each distinct test.
+
+The Test Case template has four sections:
+
+1.  Application, Test Device and Tester Information
+2.	Test Case
+3.	Issues
+4.	Results including:
+a.	Issues Identified
+b.	Tester exploratory test results
+c.	Test comments on this test case
+d.	Tester review of the application
+
+Application, Test Device and Tester Information
+
+The purpose of this section is to give specific information including what application is being tested, by whom, and on what device. 
+   
+ 
+
+The following fields are completed by the Agency:
+
+1.	Agency – Agency name. for example GSA, SSA, USDA
+2.	Application Name - What is this application name?
+3.	Application Version – What version of the application is to be tested? 
+4.	Application URL – What is the URL to the test application?
+
+The following fields are completed by the Tester:
+
+1.	Tester Name – Who is testing this application?
+2.	Device Make and Model – What is the make and model of the device. For example Motorola DROID X, iPhone 5
+3.	OS version - What operating system does your mobile device have. For example Android 4.0.4, iOS 5
+4.	Mobile Carrier Name or WIFI – Is the testing being completed on a phone using a mobile carrier such as ATT, T-Mobile, or Verizon, or WIFI? 
+5.	Time of the Test – What time is the test being conducted?
+6.	Date of the Test – What is the date of the test? 
+7.	Time Spent Executing this test case – How long did the testing take?
+
+ 
+Test Case
+
+This section is used for the Agency to document the test case and the tester to execute the test case. 
+
+Area Tested	Step #	Steps Performed	Expected Result	Actual Result	Pass/Fail	Issue Identified
+Buy a Book	1	Navigate to http://www.amazon.com/	The Amazon Main Page should display. Be sure that you can click on all of the links across the top correctly go to the correct pages including: "Today's Deals", "Gift Cards", "Sell", and "Help"	Amazon main Page correctly opened and all links appear to function properly.	PASS	 
+ 	2	In the "Search" box enter "android testing" and press "Go" 	The application should find a bunch of books on android testing including the book "Android Application Testing Guide" 	The book "Android Application Testing Guide" was correctly found. 	PASS	 
+ 	3	Left click on the book "Android Application Testing Guide" 	The page to purchase the book should appear. Check to be sure that there are Kindle, new and used books and prices.	All purchase options are available	PASS	 
+ 	4	Click on "Add to MY Cart"	A page should come up with the words "1 item added to Cart" and the Correct book "Android Application Testing Guide" is included.	The button Language was actually "Add to MY Cart"	FAIL	1) The button Language was actually "Add to MY Cart"
+ 	5	Click "Proceed to Checkout"	You should be taken to the "Sign In" screen.	Correctly taken to the "Sign In" Screen.	PASS	 
+
+The Agency completes the following columns:
+
+1.	Area Tested – This will be 
+2.	Step # - Each step will have an incremental number
+3.	Steps Performed – What would you like the Tester to do in this step? Please be very specific.
+4.	Expected Result – What should happen when the step is performed?
+
+The Tester completes the following columns:
+
+1.	Actual Result – What actually happened in this step?
+2.	Pass/Fail – Did this test step pass or fail?
+3.	Issue Identified – If there was no issues identified in this step leave it blank. If an issue was identified number it and give a quick description. (Start with 1 and increment the numbers, this will link to the Issues section)
+
+
+Issues
+
+This section gives details on any issued found during testing.
+
+Issues Identified:	Issue Title	Page the Issue Appeared 	Description of the issue	Logs	Graphics/Screenshots
+1	"Add to MY Cart" button actually named "Add to Cart" 	http://www.amazon.com/Android-Application-Testing-Torres-Milano/dp/1849513503/ref=sr_1_1?ie=UTF8&qid=1369264536&sr=8-1&keywords=android+testing
+The button to add a book to the shoping cart should be named "Add to MY Cart" but is actually named "Add to Cart" 	None Attached	Add_to_My_Cart_Issue.gif
+
+The tester completes the following columns:
+
+1.	Issues Identified – This number should match the number in The “Issue Identified” field of the Test Case  
+2.	Issue Title – Enter a descriptive title 
+3.	Page the Issue Appeared – What page of the application has the issue?
+4.	Description of the Issue – Give a good description of the issue and how to reproduce it.
+5.	Logs – If applicable and possible save system logs at the time of the defect. 
+6.	Graphics/Screenshot – If possible please take a screen shot of the issue and save it as a file. 
+
+Results
+
+This section includes the Testers “essay” results.  
+
+Tester exploratory test results:	 	 	 	 	 	 
+There is a lot of information on this page. I was just looking for a book and thought that was all they sold until I stumbled on the other items. They should probably make that more known. 
+
+
+Tester comments on this test case:
+I did not have any trouble executing the test case but would have like for the case to be mor specific on page names.
+
+
+Tester review of this application:
+I really like this application, it s easy to navigate. I liked the Father's day reminder at the top. 
+
+
+The Tester completes the following rows:
+
+1.	Tester exploratory test results – What was interesting of noteworthy during the exploratory testing session? 
+2.	Test comments on this test case – 
+a.	How was test execution?
+b.	Was the test case easy to follow?
+c.	Should the test case include more parts of the application?  
+a.	Tester review of the application – 
+a.	How would you rate this application? 
+b.	What did you like and dislike? 
+c.	What could be improved? 
+
