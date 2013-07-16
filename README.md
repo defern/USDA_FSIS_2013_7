@@ -15,9 +15,9 @@ The GSA Crowd-Source Mobile application Compatibility Testing program ...
 
 Important Test Cycle Links:
 
-Directions for Completing a Test Case Template
+*Directions for Completing a Test Case Template
 
-Test Cycle Questionaire
+*Test Cycle Questionaire
 
 
 
