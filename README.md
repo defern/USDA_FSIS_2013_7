@@ -15,9 +15,12 @@ The GSA Crowd-Source Mobile application Compatibility Testing program ...
 
 Important Test Cycle Links:
 
-*Directions for Completing a Test Case Template
+* Directions for Completing a Test Case Template
+http://mobilegovwiki.howto.gov/file/detail/Evidence_Based_Practice.jpg
+* Test Cycle Questionaire
+http://mobilegovwiki.howto.gov/file/detail/EPA+Mobile+App+Evaluation+Guidance.doc
 
-*Test Cycle Questionaire
+
 
 
 
