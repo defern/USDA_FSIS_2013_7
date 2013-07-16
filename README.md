@@ -13,7 +13,14 @@ Test Cycle Coordinator: David Fern david.fern@ssa.gov
 
 The GSA Crowd-Source Mobile application Compatibility Testing program ...
 
-Insert important Google Docs Links here
+Important Test Cycle Links:
+
+Directions for Completing a Test Case Template
+
+Test Cycle Questionaire
+
+
+
 
 
 
